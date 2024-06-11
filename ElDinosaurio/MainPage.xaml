@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ElDinosaurio.MainPage">
+    
+    <ScrollView>
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Entry x:Name="FirstNum" Placeholder="Ingresar primer número" Keyboard="Numeric"/>
+        <Entry x:Name="SecondNum" Placeholder="Ingresar segundo número" Keyboard="Numeric"/>
+
+        <Button Text="Sumar" Clicked="OnAddClicked"/>
+        <Button Text="Restar" Clicked="OnSubstractClicked"/>
+        <Button Text="Multiplicar" Clicked="OnMultiplyClicked"/>
+        <Button Text="Divisar" Clicked="OnDivideClicked"/>
+
+        <Label x:Name="ResultLabel" Text="Resultado: " FontSize="Large" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
